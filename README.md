@@ -55,8 +55,10 @@ Convert the characters &, <, >, ‘, and ” in string s to HTML-safe sequences.
 
 >>> Markup('Hello, <em>World</em>!')
 Markup('Hello, <em>World</em>!')
+
 >>> Markup(42)
 Markup('42')
+
 >>> Markup.escape('Hello, <em>World</em>!')
 Markup('Hello &lt;em&gt;World&lt;/em&gt;!')
 
@@ -66,6 +68,15 @@ Markup('Hello &lt;em&gt;World&lt;/em&gt;!')
 ...
 >>> Markup(Foo())
 Markup('<a href="/foo">foo</a>')
+
+
+
+# source: 
+1. https://flask.palletsprojects.com/en/1.1.x/
+2. https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates
+
+# projects from 
+https://blog.miguelgrinberg.com
 
 
 
