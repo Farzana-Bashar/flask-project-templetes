@@ -54,13 +54,13 @@ There are a few kinds of delimiters. The default Jinja delimiters are configured
 Convert the characters &, <, >, ‘, and ” in string s to HTML-safe sequences. Use this if you need to display text that might contain such characters in HTML. Marks return value as markup string.
 
 >>> Markup('Hello, <em>World</em>!')
-Markup('Hello, <em>World</em>!')
+>>Markup('Hello, <em>World</em>!')
 
 >>> Markup(42)
-Markup('42')
+>>Markup('42')
 
 >>> Markup.escape('Hello, <em>World</em>!')
-Markup('Hello &lt;em&gt;World&lt;/em&gt;!')
+>>Markup('Hello &lt;em&gt;World&lt;/em&gt;!')
 
 >>> class Foo:
 ...     def __html__(self):
