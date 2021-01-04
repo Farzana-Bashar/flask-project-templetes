@@ -4,7 +4,7 @@ Using HTML to the same file(templetes.py) is not cool.Consider how complex the c
 
 Templates help achieve this separation between presentation and business logic. In Flask, templates are written as separate files, stored in a templates folder that is inside the application package.
 
-<html>
+>>> <html>
     <head>
         <title>{{ title }} - Littleblog</title>
     </head>
@@ -34,7 +34,7 @@ There are a few kinds of delimiters. The default Jinja delimiters are configured
 
 #here using conditonal statement and for loops:
 
-<html>
+>>> <html>
     <head>
         {% if title %}
         <title>{{ title }} - Littleblog</title>
