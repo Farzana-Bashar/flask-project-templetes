@@ -53,6 +53,7 @@ There are a few kinds of delimiters. The default Jinja delimiters are configured
 ## markup
 Convert the characters &, <, >, ‘, and ” in string s to HTML-safe sequences. Use this if you need to display text that might contain such characters in HTML. Marks return value as markup string.
 
+```
 >>> Markup('Hello, <em>World</em>!')
 Markup('Hello, <em>World</em>!')
 
@@ -67,6 +68,7 @@ Markup('Hello &lt;em&gt;World&lt;/em&gt;!')
         return '<a href="/foo">foo</a>'
 >>> Markup(Foo())
 Markup('<a href="/foo">foo</a>')
+```
 
 
 
