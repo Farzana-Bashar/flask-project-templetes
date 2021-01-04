@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% if title %}
+      <title>{{ title }} - LittleBlog</title>
+      {% else %}
+      <title>Welcome to LittleBlog</title>
+      {% endif %}
+</head>
+
+<body>
+    <div>
+        LittleBlog:
+        <a href="/index">home</a>
+    </div>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
